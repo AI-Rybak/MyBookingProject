@@ -30,6 +30,8 @@ public class ResevationServiceImpl extends AbstractService implements Reservatio
     private HotelDAO hotelDAO = HotelDAOImpl.getInstance();
     private RoomDAO roomDAO = RoomDAOImpl.getInstance();
 
+    //примечание 3
+
     @Override
     public Reservation toReservation (Hotel hotel, Room room, User user, Date dateFrom, Date dateBefor, int quantityRoom){
         Reservation reservation = new Reservation();
