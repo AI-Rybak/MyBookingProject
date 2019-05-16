@@ -22,7 +22,7 @@ import java.util.List;
 
 public class ResevationServiceImpl extends AbstractService implements ReservationService {
     private static volatile ReservationService INSTANCE = null;
-    //примечание
+    //примечание  что то будет
     //примечание2
 
     private ReservationDAO reservationDAO = ReservationDAOImpl.getInstance();
