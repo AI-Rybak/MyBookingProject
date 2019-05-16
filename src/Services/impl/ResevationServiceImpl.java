@@ -22,15 +22,14 @@ import java.util.List;
 
 public class ResevationServiceImpl extends AbstractService implements ReservationService {
     private static volatile ReservationService INSTANCE = null;
-    //примечание
-    //примечание2
+
 
     private ReservationDAO reservationDAO = ReservationDAOImpl.getInstance();
     private UserDAO userDAO = UserDAOImpl.getInstance();
     private HotelDAO hotelDAO = HotelDAOImpl.getInstance();
     private RoomDAO roomDAO = RoomDAOImpl.getInstance();
-    //примечание 3.2
-    //примечание 3
+    //примечание
+    //примечание2
 
     @Override
     public Reservation toReservation (Hotel hotel, Room room, User user, Date dateFrom, Date dateBefor, int quantityRoom){
