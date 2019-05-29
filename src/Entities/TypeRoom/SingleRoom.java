@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.jetbrains.annotations.NotNull;
 
 @Getter
 public class SingleRoom implements TypeRoom{

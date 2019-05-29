@@ -4,7 +4,6 @@ import DAO.RoomDAO;
 import Entities.Room;
 import lombok.Getter;
 import lombok.Setter;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
 import java.sql.Date;
@@ -17,7 +16,6 @@ import static ConnectionDB.ConnectionManager.getConnection;
 
 @Getter
 @Setter
-@NotNull
 public class RoomDAOImpl implements RoomDAO {
     private static volatile RoomDAO INSTANCE = null;
 

@@ -5,7 +5,6 @@ import DAO.UserDAO;
 import Entities.User;
 import lombok.Getter;
 import lombok.Setter;
-import org.jetbrains.annotations.NotNull;
 
 
 import java.io.Serializable;
@@ -16,7 +15,6 @@ import static ConnectionDB.ConnectionManager.*;
 
 @Getter
 @Setter
-@NotNull
 public class UserDAOImpl implements UserDAO {
     private static volatile UserDAO INSTANCE = null;
 

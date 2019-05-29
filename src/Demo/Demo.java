@@ -18,14 +18,14 @@ import java.sql.SQLException;
 
 public class Demo {
     public static void main(String[] args) {
-//        saveDemoUser();
+        saveDemoUser();
 //        getDemoUser();
 //        saveDemoHotel();
 //        getDemoHotel();
 //        saveDemoRoom();
 //        getDemoRoom();
-        TypeRoom typeRoom = new SingleRoom();
-        System.out.println(typeRoom.getNAME_TYPE());
+//        TypeRoom typeRoom = new SingleRoom();
+//        System.out.println(typeRoom.getNAME_TYPE());
 
 /*
         TypeRoom typeRoom = new TypeRoom();
@@ -46,7 +46,7 @@ public class Demo {
 
 
 
-    /*
+/*
     public static void saveDemoRoom(){
         TypeRoom typeRoom = new TypeRoom();
         typeRoom.saveType("DOUBLE_ROOM");
@@ -62,6 +62,8 @@ public class Demo {
         System.out.println("после сохранения");
         System.out.println(room1.getId_Room()+" " + room1.getNameRoom()+" "+room1.getTypeRoom().getValuasType()+" "+room1.getPrice()+" "+room1.getStatusRoom());
     }
+
+
     public static void getDemoRoom () {
         Serializable id = 5;
         Room room = null;
@@ -75,7 +77,8 @@ public class Demo {
         System.out.println("проверяем метод get: ");
         System.out.println(room.getId_Room()+" " + room.getNameRoom()+" "+room.getTypeRoom().getValuasType()+" "+room.getPrice()+" "+room.getStatusRoom());
     }
-
+*/
+/*
     public static void saveDemoHotel(){
         TypeHotel typeHotel = new TypeHotel();
         typeHotel.saveType("RESORT_HOTEL");
@@ -93,6 +96,8 @@ public class Demo {
         System.out.println("после сохранения");
         System.out.println(hotel.getId_Hotel()+" " + hotel.getNameHotel()+" "+hotel.getTypeHotel().getValuasType()+" "+hotel.getLocationCountr()+" "+hotel.getLocationCity()+" "+hotel.getStar());
     }
+
+
     public static void getDemoHotel () {
         Serializable id = 4;
         Hotel hotel = null;
@@ -106,12 +111,12 @@ public class Demo {
         System.out.println("проверяем метод get: ");
         System.out.println(hotel.getId_Hotel()+" " + hotel.getNameHotel()+" "+hotel.getTypeHotel().getValuasType()+" "+hotel.getLocationCountr()+" "+hotel.getLocationCity()+" "+hotel.getStar());
     }
-
+*/
 
     public static void saveDemoUser(){
-        User user = new User("Sasha", "Rybak", "sash448@yandex.ru","sash46", "1234ty");
+        User user = new User("Sasha2", "Rybak3", "sash552@yandex.ru","sash52", "1234ty");
         System.out.println("Объект в JAVA: ");
-        System.out.println(user.getId_user()+" " + user.getNameUser()+" "+user.getSurnameUser()+" "+user.getMail()+" "+user.getLogin());
+        System.out.println(user.getId_user()+" " + user.getNameUser()+" "+user.getSurnameUser()+" "+user.getMail()+" "+user.getLogin()+" "+user.getPassword());
         try {
             UserDAO userDAO = UserDAOImpl.getInstance();
             user = userDAO.save(user);
@@ -120,7 +125,7 @@ public class Demo {
             ex.printStackTrace();
         }
         System.out.println("после сохранения");
-        System.out.println(user.getId_user()+" " + user.getId_user()+" "+user.getSurnameUser()+" "+user.getMail()+" "+user.getLogin());
+        System.out.println(user.getId_user()+" " + user.getNameUser()+" "+user.getSurnameUser()+" "+user.getMail()+" "+user.getLogin());
 
     }
 
@@ -140,6 +145,6 @@ public class Demo {
     }
 
 
-     */
+
 
 }
